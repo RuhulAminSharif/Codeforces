@@ -1,9 +1,4 @@
-if(i*i!=mul){
-            //     ll y = mul/i;
-            //     tmp = (mul1%mod * y%mod)%mod;
-            //     if(mul%tmp==0){
-            //         cnt += 1;
-            //         cout << tmp << " ";
-            //     }
-                
-            // }
+else if(p==0)
+        //     cout << - q*(q+1)/2 << endl;
+        // else
+        //     cout << n*(n+1)/2 - p*(p-1)/2 << endl;
