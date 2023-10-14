@@ -10,11 +10,22 @@ int main()
     ll t; cin >> t;
     while(t--){
         ll n; cin >> n;
-        ll a[n], ans;
+        set<ll>st; ll a[n], ans=0;
         for(ll i=0; i<n; i++){
             cin >> a[i];
-            if(i && a[i]!=a[i-1]){
-                ans = i+1;
+            st.insert(a[i]);
+        }
+        for(auto u : st){
+            if(count(a,a+n,u)==1){
+                for(ll i=0; i<n; i++){
+                    if(a[i]==u){
+                        ans = i+1;
+                        break;
+                    }
+                }
+            }
+            if(ans!=0){
+                break;
             }
         }
         cout << ans << endl;
